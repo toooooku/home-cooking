@@ -1,0 +1,61 @@
+.header {
+  background-color: beige;
+  height: 100px;
+}
+
+.inner {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  text-decoration: none;
+  width: 200px;
+  color: #ff9800;
+}
+
+.nav_left {
+  margin: 30px 0;
+  font-size: 30px;
+}
+
+.nav_right {
+  margin: 40px 0;
+ 
+}
+
+.nav_btn {
+  border: 1px #ff9800 solid;
+  text-decoration: none;
+  padding: 10px;
+  color: #ff9800;
+}
+
+.card_wrapper {
+  height: calc(100vh - 130px);
+}
+.gretting {
+  margin-bottom: 20px;
+}
+
+.gretting_link {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: lightgray;
+  padding: 10px 0;
+  height: 30px;
+}
+.copyright {
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+}
+

@@ -4,12 +4,37 @@
     <title>HomeCooking</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header class="header">
+      <div class="inner">
+        <div class="nav">
+          <div class="nav_left">
+            <%= link_to "Homecooking", root_path, class: :logo %>
+          </div>
+        
+        <%# if user_signed_in? %>
+          <%# <div class="nav_right"> %>
+            <%# <%= link_to "ログアウト", root_path, method: :delete, class: :nav_btn %>
+            <%# <%= link_to "冷蔵庫stock", root_path, class: :nav_btn %>
+            <%# <%= link_to "レシピ投稿", root_path, class: :nav_btn %>
+          <%# </div> %>
+        <%# else %>
+          <div class="nav_right"> 
+            <%= link_to "ログイン", root_path, class: :nav_btn %>
+            <%= link_to "新規登録", root_path, class: :nav_btn %>
+          </div> 
+        <%# end %>   
+        </div>
+      </div>
+    </header>  
     <%= yield %>
+    <footer class="footer">
+      <p class="copyright"> © HomeCooking</p>
+    </footer>
   </body>
 </html>
