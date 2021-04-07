@@ -18,8 +18,23 @@ class RecipesController < ApplicationController
 
   def show
     @recipe = Recipe.find(params[:id])
-  end  
+  end
 
+  def edit
+    @recipe = Recipe.find(params[:id])
+    unless @recipe.user_id == current_user.id
+      redirect_to action: :index
+    end  
+  end
+  
+  def update
+    @recipe = Recipe.find(params[:id])
+    if @recipe.update(recipe_params)
+      redirect_to recipe_path
+    else
+      render :edit
+    end    
+  end
 
   private
 
@@ -27,4 +42,5 @@ class RecipesController < ApplicationController
     params.require(:recipe).permit(:title, :cooking_recipe, :image).merge(user_id: current_user.id)
   end
 end
+
 
