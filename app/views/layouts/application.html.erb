@@ -17,18 +17,18 @@
             <%= link_to "Homecooking", root_path, class: :logo %>
           </div>
         
-        <%# if user_signed_in? %>
-          <%# <div class="nav_right"> %>
-            <%# <%= link_to "ログアウト", root_path, method: :delete, class: :nav_btn %>
-            <%# <%= link_to "冷蔵庫stock", root_path, class: :nav_btn %>
-            <%# <%= link_to "レシピ投稿", root_path, class: :nav_btn %>
-          <%# </div> %>
-        <%# else %>
+        <% if user_signed_in? %>
+          <div class="nav_right">
+             <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav_btn %>
+             <%= link_to "冷蔵庫stock", root_path, class: :nav_btn %>
+             <%= link_to "レシピ投稿", root_path, class: :nav_btn %>
+          </div>
+        <% else %>
           <div class="nav_right"> 
-            <%= link_to "ログイン", root_path, class: :nav_btn %>
-            <%= link_to "新規登録", root_path, class: :nav_btn %>
+            <%= link_to "ログイン", new_user_session_path, class: :nav_btn %>
+            <%= link_to "新規登録", new_user_registration_path, class: :nav_btn %>
           </div> 
-        <%# end %>   
+        <% end %>   
         </div>
       </div>
     </header>  
