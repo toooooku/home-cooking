@@ -110,6 +110,14 @@ img {
   min-height: calc(100vh - 130px);
 }
 
+.form_title {
+  width: 500px;
+}
+.form_cooking {
+  height: 300px;
+  width: 500px;
+}
+
 .form_btn {
   font-size: 20px;
 }
@@ -117,3 +125,62 @@ img {
 .field {
   margin: 20px 0;
 }
+
+/* 詳細ページ */
+.recipe_wrapper {
+  min-height: calc(100vh - 161px);
+}
+
+.recipe_hedding {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.recipe_user {
+  display: block;
+  font-size: 16px;
+  color: #999;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.recipe_image{
+  width: 40%;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+.recipe_detail{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.detail_title{
+  font-size: 20px;
+  font-weight: bold;
+}
+.recipe_manage{
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+.recipe_btn{
+  display: block;
+  padding: 0.4em 1.6em;
+  font-size: 0.4em;
+  color: #999;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #999 solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  margin: 0 4px;
+}
+
+.detail_message {
+  height: 150px;
+  width: 750px;
+  border: black 1px solid;
+}
+

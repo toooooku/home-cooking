@@ -1,7 +1,7 @@
 <div class="card">
-  <%= link_to image_tag( recipe.image, class: :card_img ), recipes_path(recipe.id) %>
+  <%= link_to image_tag( recipe.image, class: :card_img ), recipe_path(recipe.id) %>
   <div class="card_summary">
-    <%= link_to recipe.title, recipes_path(recipe.id), class: :card_title %>
-    <%= link_to "by #{recipe.user.name}", recipes_path(recipe.user.id), class: :card_user %>
+    <%= link_to recipe.title, recipe_path(recipe.id), class: :card_title %>
+    <%= link_to "by #{recipe.user.name}", recipe_path(recipe.user.id), class: :card_user %>
   </div>
 </div>
