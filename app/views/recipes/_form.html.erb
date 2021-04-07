@@ -1,12 +1,12 @@
 <%= form_with model: @recipe, local: true do |f| %>
   <div class="field">
     <%= f.label :title, "料理名" %><br />
-    <%= f.text_field :title, id: "recipe_title" %>
+    <%= f.text_field :title, class: :form_title, id: "recipe_title" %>
   </div>
 
   <div class="field">
     <%= f.label :cooking_recipe, "調理法" %><br _>
-    <%= f.text_area :cooking_recipe, class: :form_text, id: "cooking_recipe" %>
+    <%= f.text_area :cooking_recipe, class: :form_cooking, id: "cooking_recipe" %>
   </div>
   
   <div class="field">
