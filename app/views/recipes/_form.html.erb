@@ -1,0 +1,21 @@
+<%= form_with model: @recipe, local: true do |f| %>
+  <div class="field">
+    <%= f.label :title, "料理名" %><br />
+    <%= f.text_field :title, id: "recipe_title" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cooking_recipe, "調理法" %><br _>
+    <%= f.text_area :cooking_recipe, class: :form_text, id: "cooking_recipe" %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :image, "料理の写真" %><br _>
+    <%= f.file_field :image, id: "cooking_recipe_image" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form_btn %>
+  </div>
+<% end %>    
+  

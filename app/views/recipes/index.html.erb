@@ -6,6 +6,8 @@
           <%= link_to "#{current_user.name}さん", root_path, class: :greeting_link %>
       </div>
     <% end %>
-    <div class="card_wrapper"></div>
+    <div class="card_wrapper">
+      <%= render partial: "recipe", collection: @recipes %>
+    </div>
   </div>
 </main>  
