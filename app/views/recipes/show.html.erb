@@ -7,7 +7,7 @@
       <%= link_to "#{@recipe.user.name}", recipe_path(@recipe.user.id) , class: :recipe_user %>
       <div class="recipe_manage">
         <% if @recipe.user_id == current_user.id %>
-          <%= link_to "編集", root_path, class: :recipe_btn %>
+          <%= link_to "編集", edit_recipe_path, class: :recipe_btn %>
           <%= link_to "削除", root_path, method: :delete, class: :recipe_btn %>
         <% end %>
       </div>
