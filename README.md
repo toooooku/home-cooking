@@ -50,3 +50,16 @@
 ### Association
 
 - belongs_to :user
+
+## blogs table
+
+| Column         | Type       | Options                      |
+| -------------- | ---------- | ---------------------------- |
+| title          | string     | null:false                   |
+| content        | text       |                              |
+| start_time     | string     | null:false                   |
+| user           | references | foreign_key :true            |
+
+### Association
+
+- belongs_to :user
