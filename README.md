@@ -45,7 +45,6 @@
 | Column         | Type       | Options                      |
 | -------------- | ---------- | ---------------------------- |
 | foodstuff      | string     | null:false                   |
-| buy            | string     | null:false                   |
 | user           | references | foreign_key :true            |
 
 ### Association

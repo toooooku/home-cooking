@@ -54,7 +54,6 @@ ActiveRecord::Schema.define(version: 2021_04_08_031643) do
 
   create_table "refrigerators", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "foodstuff", null: false
-    t.string "buy", null: false
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
