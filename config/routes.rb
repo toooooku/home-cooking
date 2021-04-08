@@ -3,5 +3,8 @@ Rails.application.routes.draw do
   root to: "recipes#index"
 
   resources :recipes, only: [:index, :new, :create, :show, :edit, :update, :destroy]
+  resources :recipes do
+    resources :comments, only: :create
+  end  
 end
 
