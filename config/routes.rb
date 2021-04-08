@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   resources :recipes, only: [:index, :new, :create, :show, :edit, :update, :destroy]
   resources :recipes do
     resources :comments, only: :create
-  end  
+  end
 end
 

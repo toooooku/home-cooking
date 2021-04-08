@@ -14,7 +14,6 @@
       <div class="recipe_image">
         <%= image_tag @recipe.image %>
       </div>
-      <%# 後ほどパス変更 %>
 
       <div class="recipe_body">
         <div class="recipe_detail" >
@@ -22,4 +21,31 @@
           <p class="detail_message">
             <%= @recipe.cooking_recipe %>
         </div>
-      </div>            
+      </div>
+      <div class="recipe_comments">
+        <% if user_signed_in? %>
+          <%= form_with model: [@recipe, @comment], local: true do |f| %>
+            <div class="field">
+              <%= f.label :text, "コメント" %><br />
+              <%= f.text_field :text, id:"comment_text" %>
+            </div>
+            <div class="actions">
+              <%= f.submit "送信", class: :form_btn %>
+            </div>
+          <% end %>
+        <% end %>  
+        <ul class="comments_lists">
+          <li class="comments_list">
+            <% @comments.each do |comment| %>
+              <p>
+                <%= comment.text %>
+                <%= link_to (comment.user.name), root_path(comment.user.id), class: :comment_user %>
+              </p> 
+              <%# root_path仮置き %>
+            <% end %>
+          </li>
+        </ul>        
+      </div>  
+    </div>
+  </div>
+</main>    
