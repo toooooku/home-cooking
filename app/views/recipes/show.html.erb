@@ -4,7 +4,7 @@
       <p class="recipe_hedding">
         <%= @recipe.title %>
       </p>
-      <%= link_to "#{@recipe.user.name}", recipe_path(@recipe.user.id) , class: :recipe_user %>
+      <%= link_to "#{@recipe.user.name}", user_path(@recipe.user.id) , class: :recipe_user %>
       <div class="recipe_manage">
         <% if @recipe.user_id == current_user.id %>
           <%= link_to "編集", edit_recipe_path, class: :recipe_btn %>
@@ -39,9 +39,8 @@
             <% @comments.each do |comment| %>
               <p>
                 <%= comment.text %>
-                <%= link_to (comment.user.name), root_path(comment.user.id), class: :comment_user %>
+                <%= link_to (comment.user.name), user_path(comment.user.id), class: :comment_user %>
               </p> 
-              <%# root_path仮置き %>
             <% end %>
           </li>
         </ul>        

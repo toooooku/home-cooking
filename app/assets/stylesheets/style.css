@@ -209,3 +209,14 @@ img {
   font-size: 16px;
   color: #999;
 }
+
+/* ユーザーページ */
+.user_wrapper {
+  min-height: calc(100vh - 130px);
+}
+
+.user_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
