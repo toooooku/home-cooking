@@ -4,7 +4,7 @@
       <p class="recipe_hedding">
         <%= @recipe.title %>
       </p>
-      <%= link_to "#{@recipe.user.name}", recipe_path(@recipe.user.id) , class: :recipe_user %>
+      <%= link_to "#{@recipe.user.name}", user_path(@recipe.user.id) , class: :recipe_user %>
       <div class="recipe_manage">
         <% if @recipe.user_id == current_user.id %>
           <%= link_to "編集", edit_recipe_path, class: :recipe_btn %>
@@ -14,7 +14,6 @@
       <div class="recipe_image">
         <%= image_tag @recipe.image %>
       </div>
-      <%# 後ほどパス変更 %>
 
       <div class="recipe_body">
         <div class="recipe_detail" >
@@ -22,4 +21,30 @@
           <p class="detail_message">
             <%= @recipe.cooking_recipe %>
         </div>
-      </div>            
+      </div>
+      <div class="recipe_comments">
+        <% if user_signed_in? %>
+          <%= form_with model: [@recipe, @comment], local: true do |f| %>
+            <div class="field">
+              <%= f.label :text, "コメント" %><br />
+              <%= f.text_field :text, id:"comment_text" %>
+            </div>
+            <div class="actions">
+              <%= f.submit "送信", class: :form_btn %>
+            </div>
+          <% end %>
+        <% end %>  
+        <ul class="comments_lists">
+          <li class="comments_list">
+            <% @comments.each do |comment| %>
+              <p>
+                <%= comment.text %>
+                <%= link_to (comment.user.name), user_path(comment.user.id), class: :comment_user %>
+              </p> 
+            <% end %>
+          </li>
+        </ul>        
+      </div>  
+    </div>
+  </div>
+</main>    

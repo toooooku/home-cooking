@@ -1,0 +1,12 @@
+<div class="main">
+  <div class="inner">
+    <div class="user_wrapper">
+      <h2 class="page-heading">
+        <%= "#{@user.name}さん"%>
+      </h2>
+      <div class="user_card">
+        <%= render partial: '/recipes/recipe', collection: @recipes %>
+      </div>
+    </div>
+  </div>
+</div>    

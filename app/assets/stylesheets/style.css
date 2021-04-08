@@ -119,7 +119,12 @@ img {
 }
 
 .form_btn {
-  font-size: 20px;
+  font-size: 15px;
+  padding: 5px;
+  color: #fff;
+  background: #ff9800;
+  border: 1px #ff9800 solid;
+  width: 100px;
 }
 
 .field {
@@ -181,5 +186,37 @@ img {
 .detail_message {
   height: 150px;
   width: 750px;
-  border: black 1px solid;
+  padding: 20px;
+  background: lightgoldenrodyellow;
+}
+
+/* コメントリスト */
+.recipe_comments {
+  background-color: #f6f6f6;
+  padding: 20px;
+  margin: 30px 0 40px 0;
+}
+
+.comments_lists {
+  padding-left: 20px;
+}
+
+.comments_list {
+  padding-bottom: 5px;
+}
+
+.comment_user {
+  font-size: 16px;
+  color: #999;
+}
+
+/* ユーザーページ */
+.user_wrapper {
+  min-height: calc(100vh - 130px);
+}
+
+.user_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
