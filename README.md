@@ -57,7 +57,7 @@
 | -------------- | ---------- | ---------------------------- |
 | title          | string     | null:false                   |
 | content        | text       |                              |
-| start_time     | string     | null:false                   |
+| start_time     | datetime   | null:false                   |
 | user           | references | foreign_key :true            |
 
 ### Association
