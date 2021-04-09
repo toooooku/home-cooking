@@ -6,6 +6,7 @@ class User < ApplicationRecord
   has_many :recipes
   has_many :comments
   has_many :refrigerators
+  has_many :blogs
        
   validates :name, presence: true
 end

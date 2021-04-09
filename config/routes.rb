@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'blogs/index'
   devise_for :users
   root to: "recipes#index"
 
@@ -8,5 +9,6 @@ Rails.application.routes.draw do
   end
   resources :users, only: :show
   resources :refrigerators, only: [:index, :create, :destroy]
+  resources :blogs, only: [:index, :new, :create, :show, :destroy]
 end
 

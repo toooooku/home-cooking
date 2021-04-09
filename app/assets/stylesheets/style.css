@@ -247,3 +247,12 @@ img {
   font-size: 20px;
   margin: 30px;
 }
+
+/* カレンダーページ */
+.blogs_request {
+  font-size: 30px;
+}
+
+.table-striped {
+  height: 550px;
+}
