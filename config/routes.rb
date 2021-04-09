@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   end
   resources :users, only: :show
   resources :refrigerators, only: [:index, :create, :destroy]
-  resources :blogs, only: [:index, :new]
+  resources :blogs, only: [:index, :new, :create]
 end
 
