@@ -2,25 +2,23 @@
   <div class="inner">
     <div class="form_wrapper">
       <h2 class="page-heading">🔸リクエスト料理🔸</h2>
-<%= form_with model: @blog, local: true do |f| %>
-  <div class="field">
-    <%= f.label :title, "🍚メニュー名" %><br />
-    <%= f.text_field :title, class: :form_title, id: "blog_title" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :start_time, "🗓日時" %><br _>
-    <%= f.datetime_select :start_time, class: :form_start_time, id: "blog_time" %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :content, "📄メモ" %><br _>
-    <%= f.text_area :content, class: :form_cooking,id: "blog_content" %>
-  </div>
-  <div>
-    <%= link_to "戻る",blogs_path, class: :form_btn%>
-  </div>
-<% end %>  
-</div>
+      <%= form_with model: @blog, local: true do |f| %>
+        <div class="field">
+          <%= f.label :title, "🍚メニュー名" %><br />
+          <%= f.text_field :title, class: :form_title, id: "blog_title" %>
+        </div>
+        <div class="field">
+          <%= f.label :start_time, "🗓日時" %><br _>
+          <%= f.datetime_select :start_time, class: :form_start_time, id: "blog_time" %>
+        </div>
+        <div class="field">
+          <%= f.label :content, "📄メモ" %><br _>
+          <%= f.text_area :content, class: :form_cooking,id: "blog_content" %>
+        </div>
+        <div>
+          <%= link_to "戻る",blogs_path, class: :form_btn%>
+        </div>
+      <% end %>  
+    </div>
   </div>
 </div>  
