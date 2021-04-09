@@ -9,7 +9,6 @@
   <% blogs.each do |blog| %>
     <div>
       <%= link_to blog.title, blog_path(blog.id) %>
-      <%= "仮置き" %>
       <%= link_to "[x]", blog_path(blog.id), method: :delete %>
     </div>
   <% end %>

@@ -252,3 +252,7 @@ img {
 .blogs_request {
   font-size: 30px;
 }
+
+.table-striped {
+  height: 550px;
+}
