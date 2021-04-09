@@ -13,6 +13,7 @@
 - has_many :recipes
 - has_many :comments
 - has_many :refrigerators
+- has_many :blogs
 
 ## recipes table
 
