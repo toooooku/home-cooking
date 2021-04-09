@@ -5,7 +5,7 @@
 
   <% blogs.each do |blog| %>
     <div>
-      <%= link_to blog.title %>
+      <%= link_to blog.title, blog_path(blog) %>
       <%= "仮置き" %>
       <%= link_to "[x]"%>
     </div>
