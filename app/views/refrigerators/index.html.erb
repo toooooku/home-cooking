@@ -1,25 +1,23 @@
 <main class="main">
   <div class="inner">
     <div class="refrigerator_wrapper">
-       <div class="refrigerator_comments">
-          <%= form_with model: @refrigerator, local: true do |f| %>
-          <div class="foodstuff_comments">
+      <div class="refrigerator_comments">
+          <%= form_with(model: @refrigerator, local: true, id: "new_food") do |f| %>
+            <div class="foodstuff_comments">
               <%= f.label :foodstuff, "冷蔵庫stock" %><br />
               <%= f.text_field :foodstuff, id:"foodstuff_text" %>
-              <%= f.submit "+", class: :form_refrigerator_btn %>
-          <% end %>
-          <ul class="refrigerators_lists">
-            <li class="refrigerators_list">
+              <%= f.submit "+", class: :form_refrigerator_btn, id: "submit" %>
+            <ul class="refrigerators_lists" id="foodlists">
               <% @refrigerators.each do |refrigerator| %>
-              <p>
-                <%= refrigerator.foodstuff %>
-                <%= link_to "x", refrigerator_path(refrigerator), method: :delete, class: :form_refrigerator_btn %>
-              </p> 
+                <li class="refrigerators_list" id="refrigerators_list">
+                  <%= refrigerator.foodstuff %>
+                  <%= link_to "x", refrigerator_path(refrigerator), method: :delete, class: :form_refrigerator_btn %>
+                </li>
               <% end %>
-            </li>
-          </ul> 
-        </div>
-        </div>
+            </ul> 
+          <% end %>
+          </div>
+      </div>
     </div>
   </div>
 </main>  

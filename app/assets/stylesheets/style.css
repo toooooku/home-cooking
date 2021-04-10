@@ -2,7 +2,9 @@
 * {
   box-sizing: border-box;
 }
-
+.main {
+  background-image: url("main.png");
+}
 img {
   max-width: 100%;
   vertical-align: bottom;
@@ -242,9 +244,18 @@ img {
   background: lightgoldenrodyellow;
   padding: 30px;
 }
+.refrigerators_lists {
+  column-count: 5;
+}
+
+ul>li {
+  display: inline-block;
+  width: 100%;
+  overflow: scroll;
+}
 
 .refrigerators_list {
-  font-size: 20px;
+  font-size: 15px;
   margin: 30px;
 }
 

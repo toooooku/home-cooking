@@ -1,15 +1,13 @@
 class RefrigeratorsController < ApplicationController
   def index
-    @refrigerators = Refrigerator.all
+    @refrigerators = Refrigerator.all.includes(:user).order("created_at DESC")
   end
   
   def create
-    @refrigerator = Refrigerator.new(refrigerator_params)
-    if @refrigerator.save
-      redirect_to root_path
-    else
-      render :index
-    end
+    refrigerator = Refrigerator.new(refrigerator_params)
+    if refrigerator.save
+      render json: {refrigerator: refrigerator}
+    end  
   end
 
   def destroy
@@ -18,9 +16,8 @@ class RefrigeratorsController < ApplicationController
     redirect_to root_path
   end  
     
-    private
-    
-    def refrigerator_params
+  private
+  def refrigerator_params
     params.permit(:foodstuff).merge(user_id: current_user.id)
-    end
+  end
 end
