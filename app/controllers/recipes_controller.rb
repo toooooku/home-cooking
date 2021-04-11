@@ -1,4 +1,6 @@
 class RecipesController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :show]
+
   def index
     @recipes = Recipe.all
   end
@@ -48,7 +50,7 @@ class RecipesController < ApplicationController
 
   def recipe_params
     params.require(:recipe).permit(:title, :cooking_recipe, :image).merge(user_id: current_user.id)
-  end
+  end  
 end
 
 
