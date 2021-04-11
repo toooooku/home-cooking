@@ -1,4 +1,6 @@
 class RefrigeratorsController < ApplicationController
+  before_action :authenticate_user!
+  
   def index
     @refrigerators = Refrigerator.all.includes(:user).order("created_at DESC")
   end
@@ -13,7 +15,7 @@ class RefrigeratorsController < ApplicationController
   def destroy
     refrigerator = Refrigerator.find(params[:id])
     refrigerator.destroy
-    redirect_to root_path
+    redirect_to refrigerators_path
   end  
     
   private
