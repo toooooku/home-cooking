@@ -3,6 +3,7 @@
     <div class="form_wrapper">
       <h2 class="page-heading">🔸リクエスト料理🔸</h2>
       <%= form_with model: @blog, local: true do |f| %>
+        <%= render 'shared/error_messages', model: f.object %>
         <div class="field">
           <%= f.label :title, "🍚メニュー名" %><br />
           <%= f.text_field :title, class: :form_title, id: "blog_title" %>
