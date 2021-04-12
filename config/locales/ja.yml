@@ -7,5 +7,9 @@ ja:
        title: 料理名
        image: 料理の写真  
      blog:
-       title: メニュー名  
+       title: メニュー名 
+     comment:
+        text: コメント 
+        user: ユーザー
+        recipe: レシピ  
      
