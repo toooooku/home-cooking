@@ -5,7 +5,17 @@ ja:
        name: 名前
      recipe:
        title: 料理名
-       image: 料理の写真  
+       image: 料理の写真
+       user: ユーザー 
      blog:
-       title: メニュー名  
+       title: メニュー名 
+       start_time: 日時
+       user: ユーザー
+     comment:
+        text: コメント 
+        user: ユーザー
+        recipe: レシピ 
+     refrigerator:
+        foodstuff: 食材
+        user: ユーザー    
      
