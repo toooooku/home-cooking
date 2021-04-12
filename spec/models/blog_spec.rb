@@ -24,14 +24,19 @@ RSpec.describe Blog, type: :model do
       it 'start_timeが空では保存できないこと' do
         @blog.start_time = ''
         @blog.valid?
-        expect(@blog.errors.full_messages).to include("Start timeを入力してください")
+        expect(@blog.errors.full_messages).to include("日時を入力してください")
       end
       it 'titleとstart_timeが空だと保存できないこと'do
         @blog.title = ''
         @blog.start_time = ''
         @blog.valid?
-        expect(@blog.errors.full_messages).to include("メニュー名を入力してください", "Start timeを入力してください")
+        expect(@blog.errors.full_messages).to include("メニュー名を入力してください", "日時を入力してください")
       end
+      it 'userが紐づいていないと保存できないこと' do
+        @blog.user = nil
+        @blog.valid?
+        expect(@blog.errors.full_messages).to include("ユーザーを入力してください")
+      end 
     end  
   end
 end  

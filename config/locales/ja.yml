@@ -9,6 +9,8 @@ ja:
        user: ユーザー 
      blog:
        title: メニュー名 
+       start_time: 日時
+       user: ユーザー
      comment:
         text: コメント 
         user: ユーザー
