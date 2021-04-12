@@ -14,5 +14,8 @@ ja:
      comment:
         text: コメント 
         user: ユーザー
-        recipe: レシピ  
+        recipe: レシピ 
+     refrigerator:
+        foodstuff: 食材
+        user: ユーザー    
      

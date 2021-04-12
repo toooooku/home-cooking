@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :recipe do
-    title {Faker::Lorem.sentence}
+    title {"野菜炒め"}
     cooking_recipe{"レシピ"}
     association :user
 
