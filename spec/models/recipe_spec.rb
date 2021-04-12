@@ -32,6 +32,11 @@ RSpec.describe Recipe, type: :model do
         @recipe.valid?
       expect(@recipe.errors.full_messages).to include("料理名を入力してください", "料理の写真を入力してください")
       end
+      it 'userが紐づいていないと保存できないこと' do
+        @recipe.user = nil
+        @recipe.valid?
+        expect(@recipe.errors.full_messages).to include("ユーザーを入力してください")
+      end 
     end
   end
 end    
