@@ -1,5 +1,5 @@
 class RecipesController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :show]
+  before_action :authenticate_user!, only: [:new, :show, :search]
 
   def index
     @recipes = Recipe.all
@@ -45,6 +45,10 @@ class RecipesController < ApplicationController
     recipe.destroy
     redirect_to root_path
   end  
+
+  def search
+    @recipes = Recipe.search(params[:keyword])
+  end
 
   private
 
