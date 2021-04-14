@@ -1,6 +1,8 @@
+if (location.pathname.match("refrigerators")){
 function refrigerator() {
   const submit = document.getElementById("submit");
   submit.addEventListener("click", (e) => {
+    e.preventDefault();
     const formData = new FormData(document.getElementById("new_food"));
     const XHR = new XMLHttpRequest();
     XHR.open("POST", "/refrigerators", true);
@@ -16,9 +18,9 @@ function refrigerator() {
       const foodComment = document.getElementById("foodlists");
       const foodstuffText = document.getElementById("foodstuff_text");
       const HTML = `
-      <li class="refrigerators_list">
+      <li class="refrigerators_list" style="color:red;">
       ${ item.foodstuff }
-      <a class="form_refrigerator_btn" rel="nofollow" data-method="delete" href="/refrigerators/248">x</a>
+      <a class="form_refrigerator_btn" rel="nofollow" data-method="delete" href="/refrigerators/${item.id}">x</a>
       </li>`;
       foodComment.insertAdjacentHTML("afterbegin", HTML);
       foodstuffText.value = "";
@@ -28,3 +30,4 @@ function refrigerator() {
   })
 }
 window.addEventListener("load", refrigerator);
+}

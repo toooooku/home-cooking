@@ -5,17 +5,17 @@
       <%= form_with model: @blog, local: true do |f| %>
         <%= render 'shared/error_messages', model: f.object %>
         <div class="field">
-          <%= f.label :title, "🍚メニュー名" %><br />
+          <%= f.label :title, "🍚メニュー名", class: :recipe_menu %><br />
           <%= f.text_field :title, class: :form_title, id: "blog_title" %>
         </div>
 
         <div class="field">
-          <%= f.label :start_time, "🗓日時" %><br _>
+          <%= f.label :start_time, "🗓日時", class: :recipe_time %><br _>
           <%= f.datetime_select :start_time, class: :form_start_time, id: "blog_time" %>
         </div>
         
         <div class="field">
-          <%= f.label :content, "📄メモ" %><br _>
+          <%= f.label :content, "📄メモ", class: :recipe_memo %><br _>
           <%= f.text_area :content, class: :form_cooking,id: "blog_content" %>
         </div>
 

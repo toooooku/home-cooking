@@ -1,18 +1,18 @@
 <%= form_with model: @recipe, local: true do |f| %>
       <%= render 'shared/error_messages', model: f.object %>
   <div class="field">
-    <%= f.label :title, "料理名" %><br />
+    <%= f.label :title, "🍽料理名", class: :recipe_form_title %><br />
     <%= f.text_field :title, class: :form_title, id: "recipe_title" %>
   </div>
 
   <div class="field">
-    <%= f.label :cooking_recipe, "調理法" %><br _>
+    <%= f.label :cooking_recipe, "🍳調理法", class: :recipe_form_cooking %><br _>
     <%= f.text_area :cooking_recipe, class: :form_cooking, id: "cooking_recipe" %>
   </div>
   
   <div class="field">
-    <%= f.label :image, "料理の写真" %><br _>
-    <%= f.file_field :image, id: "cooking_recipe_image" %>
+    <%= f.label :image, "📷料理の写真", class: :recipe_form_image %><br _>
+    <%= f.file_field :image, class: :recipe_form_img ,id: "cooking_recipe_image" %>
   </div>
 
   <div class="actions">

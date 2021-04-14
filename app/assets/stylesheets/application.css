@@ -17,3 +17,13 @@
  * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'tanukifont';
+  src: url('たぬきフォント.woff') format("woff");
+  src: url('たぬきフォント.woff2') format('woff');
+}
+
+.detail_message {
+  font-family: 'tanukifont';
+}

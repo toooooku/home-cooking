@@ -4,14 +4,14 @@
       <div class="refrigerator_comments">
           <%= form_with(model: @refrigerator, local: true, id: "new_food") do |f| %>
             <div class="foodstuff_comments">
-              <%= f.label :foodstuff, "冷蔵庫stock" %><br />
-              <%= f.text_field :foodstuff, id:"foodstuff_text" %>
+              <%= f.label :foodstuff, "冷蔵庫stock", class: :refrigerator_stock %><br />
+              <%= f.text_field :foodstuff, id:"foodstuff_text", class: :foodstuff_text %>
               <%= f.submit "+", class: :form_refrigerator_btn, id: "submit" %>
             <ul class="refrigerators_lists" id="foodlists">
               <% @refrigerators.each do |refrigerator| %>
                 <li class="refrigerators_list" id="refrigerators_list">
                   <%= refrigerator.foodstuff %>
-                  <%= link_to "x", refrigerator_path(refrigerator), method: :delete, class: :form_refrigerator_btn %>
+                  <%= link_to "x", refrigerator_path(refrigerator.id), method: :delete, class: :refrigerator_btn %>
                 </li>
               <% end %>
             </ul> 
