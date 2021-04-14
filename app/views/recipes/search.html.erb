@@ -1,0 +1,11 @@
+<main class="main">
+  <div class="inner">
+    <div class="recipe_wrapper">
+      <div class="card_wrapper">
+        <% @recipes.each do |recipe| %>
+            <%= render partial: "recipe", collection: @recipes %>
+         <% end %>  
+      </div>
+    </div>
+  </div>
+</main>

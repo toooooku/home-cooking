@@ -2,9 +2,13 @@
   <div class="inner">
     <% if user_signed_in? %>
       <div class="greeting">
-        <%= "こんにちは、" %>
-          <%= link_to "#{current_user.name}さん", user_path(current_user.id), class: :greeting_link %>
+        <%= "🎵ログイン中🎵" %>
+        <%= link_to "#{current_user.name}さん", user_path(current_user.id), class: :greeting_link %>
       </div>
+    <% end %>
+    <%= form_with(url: search_recipe_path(@recipes), local: true, method: :get, class: "search-form") do |form| %>
+      <%= form.text_field :keyword, placeholder: "レシピを検索する", class: "search-input" %>
+      <%= form.submit "検索", class: "search-btn" %>
     <% end %>
     <div class="card_wrapper">
       <%= render partial: "recipe", collection: @recipes %>

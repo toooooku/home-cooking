@@ -85,6 +85,14 @@ img {
   border-radius: 20px;
   box-shadow: 8px 7px 10px black;
 }
+.card_wrapper_search {
+  height: 500px;
+  width: 500px;
+  padding: 0px 30px;
+  margin-bottom: 16px;
+  border-radius: 20px;
+  box-shadow: 8px 7px 10px black;
+}
 
 .card__title {
   display: block;
@@ -426,6 +434,9 @@ ul>li {
 /* カレンダーページ */
 .blogs_request {
   font-size: 30px;
+  color: #a33b16;
+  text-shadow:2px 3px 2px white;
+  background: linear-gradient(transparent 50%, rgb(242, 245, 71) 50%);
 }
 
 .table-striped {
@@ -455,4 +466,23 @@ ul>li {
   background-color: transparent;
   border-radius: 10px;
   box-shadow: 8px 7px 7px black;
+}
+
+/* レシピ検索 */
+.search-input {
+  background-color: transparent;
+  border-radius: 20px;
+  box-shadow: 8px 7px 10px black;
+  padding-left: 10px;
+  margin: 30px auto;
+}
+
+.search-btn {
+  width: 50px;
+  height: 30px;
+  font-size: 15px;
+  color: #fff;
+  background: #ff9800;
+  border-radius: 20px;
+  box-shadow: 8px 7px 10px black;
 }
