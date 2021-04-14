@@ -26,7 +26,7 @@
         <% if user_signed_in? %>
           <%= form_with model: [@recipe, @comment], local: true do |f| %>
             <div class="field">
-              <%= f.label :text, "コメント" %><br />
+              <%= f.label :text, "コメント", class: :comment_text %><br />
               <%= f.text_field :text, id:"comment_text" %>
             </div>
             <div class="actions">
