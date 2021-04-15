@@ -3,6 +3,13 @@
   box-sizing: border-box;
 }
 
+body,
+p,
+h2 {
+  margin:0;
+  padding:0;
+}
+
 .main {
   background-image: url("purty_wood.png");
 }
@@ -169,6 +176,7 @@ img {
 {
   font-size: 30px;
   margin-bottom: 30px;
+  padding-top: 30px;
   color: #a33b16;
   text-shadow:2px 3px 2px white;
 }
