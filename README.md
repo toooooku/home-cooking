@@ -39,7 +39,7 @@
 #### `☆ 投稿者本人であれば投稿の編集・削除が投稿詳細画面から可能になる`
 <br>
 
- [![Image from Gyazo](https://i.gyazo.com/710dcccadc0d83147a03280ffe819e31.gif)](https://gyazo.com/710dcccadc0d83147a03280ffe819e31)
+![Videotogif (2)](https://user-images.githubusercontent.com/79389139/114973932-62967580-9ebc-11eb-8848-7586a0a342a6.gif)
 
 <br>
   
@@ -48,7 +48,7 @@
 #### `☆ 冷蔵庫ストックが追加するとスクロール表示できる`
 #### `☆ 新規追加すると、文字が赤色になる`<br>
   
-  [![Image from Gyazo](https://i.gyazo.com/4ba0585255618aec22a7f34483f9c525.gif)](https://gyazo.com/4ba0585255618aec22a7f34483f9c525)
+  ![Videotogif (3)](https://user-images.githubusercontent.com/79389139/114974360-329ba200-9ebd-11eb-828a-f68d9868aced.gif)
 
 <br>
 
@@ -57,11 +57,11 @@
 #### `☆ リクエスト料理をクリックすると、詳細画面が確認できる`
 #### `☆ リクエスト料理、隣の[x]をクリックすることで、削除できる`<br>
   
-  [![Image from Gyazo](https://i.gyazo.com/ebcd657fe187a7a35961f91458002781.gif)](https://gyazo.com/ebcd657fe187a7a35961f91458002781)
+  ![Videotogif (4)](https://user-images.githubusercontent.com/79389139/114974792-07658280-9ebe-11eb-8cd4-3a602d21b038.gif)
   
-  [![Image from Gyazo](https://i.gyazo.com/6214c4d80f878d5d60b856bfca54bf34.gif)](https://gyazo.com/6214c4d80f878d5d60b856bfca54bf34)
+  ![Videotogif (5)](https://user-images.githubusercontent.com/79389139/114975067-8d81c900-9ebe-11eb-8e6a-cd4d77334fe2.gif)
  
- [![Image from Gyazo](https://i.gyazo.com/45e5405115f6fe8897a1fd851f1c0b8f.gif)](https://gyazo.com/45e5405115f6fe8897a1fd851f1c0b8f)
+ ![Videotogif (7)](https://user-images.githubusercontent.com/79389139/114975393-287aa300-9ebf-11eb-859f-252eed97a899.gif)
 
 # ✅ 課題解決
 | ユーザーストーリーから考える課題                                                        | 課題解決                                         |
