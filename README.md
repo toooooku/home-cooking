@@ -28,27 +28,39 @@
 #### `☆ 一覧画面へ遷移する`
 #### `☆ レシピ投稿は右上のレシピ投稿をクリック`
 #### `☆ 投稿完了後は一覧画面へ戻る`<br>
+
 ![Image from Gyazo](https://i.gyazo.com/36f1b81adfeb3861075343cd180b7777.gif)
+
 ![Image from Gyazo](https://i.gyazo.com/1c1dac1948e8c0e06fc626f56046a822.gif)
-  <br>
+
+<br>
+
 #### `☆ 一覧画面から１つの投稿を選択 → 投稿詳細画面へ遷移する`
-#### `☆ 投稿者本人であれば投稿の編集・削除が投稿詳細画面から可能になる`<br>
+#### `☆ 投稿者本人であれば投稿の編集・削除が投稿詳細画面から可能になる`
+<br>
+
  [![Image from Gyazo](https://i.gyazo.com/710dcccadc0d83147a03280ffe819e31.gif)](https://gyazo.com/710dcccadc0d83147a03280ffe819e31)
+
 <br>
   
 #### `☆ 冷蔵庫ストックは右上の冷蔵庫ストックをクリック`
 #### `☆ 冷蔵庫ストックを追加、削除できる`
 #### `☆ 冷蔵庫ストックが追加するとスクロール表示できる`
 #### `☆ 新規追加すると、文字が赤色になる`<br>
+  
   [![Image from Gyazo](https://i.gyazo.com/4ba0585255618aec22a7f34483f9c525.gif)](https://gyazo.com/4ba0585255618aec22a7f34483f9c525)
+
 <br>
 
 #### `☆ カレンダーは右上のカレンダーをクリック`
 #### `☆ リクエスト料理を保存し、カレンダーに反映できる`
 #### `☆ リクエスト料理をクリックすると、詳細画面が確認できる`
 #### `☆ リクエスト料理、隣の[x]をクリックすることで、削除できる`<br>
+  
   [![Image from Gyazo](https://i.gyazo.com/ebcd657fe187a7a35961f91458002781.gif)](https://gyazo.com/ebcd657fe187a7a35961f91458002781)
+  
   [![Image from Gyazo](https://i.gyazo.com/6214c4d80f878d5d60b856bfca54bf34.gif)](https://gyazo.com/6214c4d80f878d5d60b856bfca54bf34)
+ 
  [![Image from Gyazo](https://i.gyazo.com/45e5405115f6fe8897a1fd851f1c0b8f.gif)](https://gyazo.com/45e5405115f6fe8897a1fd851f1c0b8f)
 
 # ✅ 課題解決
@@ -60,7 +72,7 @@
 | 毎日料理をしていると、直近の献立と重複してしまう課題                                  | カレンダー画面にて、その日のレシピを保存できるため、過去のレシピを振り返ることができる |
 | リクエスト料理を家族から聞きたいという課題                                                    | カレンダー画面から、リクエスト料理へ遷移でき、リクエスト料理や、帰宅時間など保存でき、カレンダーに反映される |
 
-# 📝 洗い出した要件
+# 📝 要件定義
 ### **https://docs.google.com/spreadsheets/d/11sgUbuGcMQ2BU24t4qYTuXN9FBRokNhashsgIxTWLhc/edit#gid=282075926** 
 
 # 📦  機能一覧
@@ -74,7 +86,6 @@
 | 冷蔵庫ストック機能 | ログインユーザーのみ、追加・削除・閲覧可能（非同期通信） |
 | カレンダー機能 | ログインユーザーのみ、追加・削除・閲覧可能|
 | コメント機能 | ログインユーザーのみ、投稿詳細ページからコメントが可能|
-
 
 
 ## 📝 冷蔵庫ストック機能
@@ -114,11 +125,11 @@ $ rails s
 
 - VScode
 - Ruby 2.6.5
-- Rails 6.0.3.4
+- Rails 6.0.3.6
 - mysql2 0.5.3
 - JavaScript
 - gem 3.0.3
-- heroku 7.46.0
+- heroku 7.52.0
 
 # DB 設計
 
