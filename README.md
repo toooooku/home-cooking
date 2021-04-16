@@ -29,9 +29,9 @@
 #### `☆ レシピ投稿は右上のレシピ投稿をクリック`
 #### `☆ 投稿完了後は一覧画面へ戻る`<br>
 
-![Image from Gyazo](https://i.gyazo.com/36f1b81adfeb3861075343cd180b7777.gif)
+![Videotogif](https://user-images.githubusercontent.com/79389139/114972607-c4091500-9eb9-11eb-9d3c-84f44848b372.gif)
 
-![Image from Gyazo](https://i.gyazo.com/1c1dac1948e8c0e06fc626f56046a822.gif)
+![Videotogif (1)](https://user-images.githubusercontent.com/79389139/114973286-1991f180-9ebb-11eb-9043-dc35bd1d46c0.gif)
 
 <br>
 
